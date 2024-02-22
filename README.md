@@ -2,6 +2,7 @@
 
 - clone repo
 - npm i
+- create .env file
 
 ## Preview
 
