@@ -4,7 +4,7 @@ import { Intro } from "@/app/_components/intro";
 import { MoreStories } from "@/app/_components/more-stories";
 import { getAllPosts } from "../lib/api";
 import NewsOutside from "@/app/_components/news-outside";
-
+import NewsQueryClient from "@/app/_components/news-query-client";
 export default function Index() {
   const allPosts = getAllPosts();
 
@@ -26,6 +26,7 @@ export default function Index() {
         />
         {morePosts.length > 0 && <MoreStories posts={morePosts} />}
         <NewsOutside />
+        <NewsQueryClient />
       </Container>
     </main>
   );
